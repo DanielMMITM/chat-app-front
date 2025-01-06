@@ -1,8 +1,6 @@
-import { useOutsideLayout } from '../outside-layout/useOutsideLayout';
 import '@/components/tabs/tabs.css';
 
-export const Tabs = () => {
-  const { handleCurrentTab, currentTab } = useOutsideLayout();
+export const Tabs = ({ currentTab, handleCurrentTab }: any) => {
   return (
     <section className="tabs">
       <button

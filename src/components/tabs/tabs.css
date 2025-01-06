@@ -1,11 +1,7 @@
 .tabs {
   display: flex;
-  flex-direction: row;
-  justify-content: stretch;
-  align-items: stretch;
   background-color: var(--secondary-bg-color);
   border-radius: 2rem 2rem 0 0;
-  min-width: 30dvw;
   box-shadow: 0px -7px 15px 5px #dbdadaf3;
   z-index: 2;
 }
