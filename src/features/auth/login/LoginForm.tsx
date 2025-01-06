@@ -2,7 +2,7 @@ import '@/features/auth/login/login.css';
 
 export const LoginForm = () => {
   return (
-    <div className="login">
+    <>
       <h1 className="login__heading-text">Login</h1>
       <form className="login__form-container">
         <div className="login__form-container-input">
@@ -24,6 +24,6 @@ export const LoginForm = () => {
         <h4 className="login__oauth--title">or</h4>
         <div>GOOGLE</div>
       </section>
-    </div>
+    </>
   );
 };

@@ -40,6 +40,16 @@ body {
   background-color: var(--main-bg-color);
 }
 
+.outside-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 6px 5px #dbdadaf3;
+  padding: 4rem 8rem;
+  background-color: var(--secondary-bg-color);
+  min-width: 25dvw;
+  border-radius: 0 0 2rem 2rem;
+}
+
 .border-radius-xs {
   border-radius: 0.5rem;
 }
