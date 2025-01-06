@@ -1,3 +1,16 @@
+:root {
+  --main-bg-color: #fcfcfc;
+  --secondary-bg-color: #ffffff;
+
+  --primary-color: #46b346;
+  --secondary-color: #aaaaaa;
+
+  --primary-text-color: #000000;
+  --secondary-text-color: #ffffff;
+
+  --border-focus-color: #0a0909;
+}
+
 *,
 *::after *::before {
   margin: 0;
@@ -9,5 +22,22 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f3f3f3f3;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.outside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: var(--main-bg-color);
+}
+
+.border-radius-xs {
+  border-radius: 0.5rem;
+}
+
+.border-radius-sm {
+  border-radius: 2rem;
 }
