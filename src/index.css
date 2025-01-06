@@ -30,14 +30,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100dvh;
 }
 
 .outside-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 100dvh;
   background-color: var(--main-bg-color);
+  padding: 4rem 0;
 }
 
 .outside-card {
