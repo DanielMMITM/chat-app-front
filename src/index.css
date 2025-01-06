@@ -9,6 +9,9 @@
   --secondary-text-color: #ffffff;
 
   --border-focus-color: #0a0909;
+
+  --default-hover-color: #f3f3f3;
+  --secondary-hover-color: #2f9c2f;
 }
 
 *,
@@ -23,21 +26,20 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .outside-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100dvh;
   background-color: var(--main-bg-color);
 }
 
 .border-radius-xs {
   border-radius: 0.5rem;
-}
-
-.border-radius-sm {
-  border-radius: 2rem;
 }
