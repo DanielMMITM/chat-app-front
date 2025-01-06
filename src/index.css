@@ -54,3 +54,54 @@ body {
 .border-radius-xs {
   border-radius: 0.5rem;
 }
+
+/* FORM CONTAINER */
+.heading-text {
+  text-align: center;
+}
+
+.form-container,
+.form-container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container-input label {
+  font-weight: bold;
+}
+
+.form-container-input input {
+  min-height: 2.5rem;
+  padding: 0rem 0.5rem;
+  border: 1px solid var(--secondary-color);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.form-container-input input:focus,
+.form-container-input input:hover {
+  border: 1px solid var(--border-focus-color);
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: var(--default-hover-color);
+}
+
+.form-container-button {
+  font-weight: bold;
+  margin-top: 0.8rem;
+  min-height: 2rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+  border: 2px solid #2b7e2b;
+  -webkit-transition: 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.form-container-button:hover {
+  background-color: var(--secondary-hover-color);
+  border: 2px solid #112b11;
+}
