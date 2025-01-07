@@ -1,5 +1,3 @@
-import '@/features/auth/login/login.css';
-
 export const SignUpForm = () => {
   return (
     <>

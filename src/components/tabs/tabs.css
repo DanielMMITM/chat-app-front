@@ -8,6 +8,7 @@
 
 .tabs__btn,
 .tabs--selected-tab {
+  font-weight: bold;
   display: flex;
   flex-grow: 1;
   padding: 0.5rem 8rem;
@@ -41,7 +42,6 @@
 .tabs--selected-tab {
   background-color: var(--primary-color);
   color: var(--secondary-text-color);
-  font-weight: bold;
   border: 1px solid #000;
 }
 
