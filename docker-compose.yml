@@ -1,0 +1,23 @@
+services:
+  frontend:
+    image: chat-app-dev-image
+    container_name: chat-app-dev-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - 5173:5173
+    volumes:
+      - chat-app-front:/chat-app-front
+      - /chat-app-front/node_modules
+    command: npm run dev -- --host
+    develop:
+      watch:
+        - action: sync+restart
+          path: .
+          target: /chat-app-front
+          ignore:
+            - ./node_modules
+volumes:
+  chat-app-front:

@@ -7,15 +7,16 @@ USER nodeUser
 # Set the working directory inside the container
 WORKDIR /chat-app-front
  
-# Copy package.json and package-lock.json
-COPY --chown=nodeUser:nodeGroup package.json .
+#Copy package.json
+COPY package.json .
 
 # Install dependencies
-RUN npm install 
+RUN npm cache clean --force
+RUN npm i
 
 # Copy the rest of your application files
-COPY --chown=nodeUser:nodeGroup . .
- 
-# Define the command to run your app
+COPY . .
 
-CMD ["npm", "run", "dev"]
+# Assign workdir to the new user
+RUN chown nodeUser:nodeGroup .
+RUN chown nodeUser:nodeGroup /chat-app-front

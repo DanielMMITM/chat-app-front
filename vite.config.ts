@@ -9,10 +9,4 @@ export default defineConfig({
       '@': '/src',
     },
   },
-  server: {
-    watch: {
-      usePolling: true,
-      interval: 500,
-    },
-  },
 });
