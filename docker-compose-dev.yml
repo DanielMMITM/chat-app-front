@@ -1,10 +1,10 @@
 services:
   frontend:
-    image: chat-app-dev-image
-    container_name: chat-app-dev-container
+    image: chat-app-front-dev-image
+    container_name: chat-app-front-dev-container
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile-dev
     restart: unless-stopped
     ports:
       - 5173:5173
@@ -19,5 +19,9 @@ services:
           target: /chat-app-front
           ignore:
             - ./node_modules
+    networks:
+      - chat-app
+    depends_on:
+      - backend
 volumes:
   chat-app-front:

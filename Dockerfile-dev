@@ -1,0 +1,15 @@
+FROM node:23-alpine3.20
+
+RUN addgroup nodeGroup && adduser -S -G nodeGroup nodeUser
+USER nodeUser
+
+WORKDIR /chat-app-front
+ 
+COPY package.json .
+
+RUN npm cache clean --force
+RUN npm i
+
+COPY . .
+
+RUN chown nodeUser:nodeGroup .
